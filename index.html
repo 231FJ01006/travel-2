@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explore Destinations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://source.unsplash.com/1600x900/?travel,beach') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: rgba(255, 182, 193, 0.95);
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 2.2rem;
+      left: 0;
+      background: #fff0f5;
+      padding: 0.5rem 0;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 16px;
+      color: #d6336c;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe6eb;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(255, 240, 245, 0.8);
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #d6336c;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 0.5rem 0;
+      color: #d6336c;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      background-color: #d6336c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .card-content a:hover {
+      background-color: #c02558;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-brand">Travel</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a href="#">Services</a>
+        <div class="dropdown-content">
+          <a href="https://www.makemytrip.com/hotels/" target="_blank">Resorts</a>
+          <a href="https://www.zomato.com" target="_blank">Restaurants</a>
+          <a href="https://www.skyscanner.co.in/" target="_blank">Flight Tickets</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Contact</a>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>Explore Top Destinations</header>
+
+  <!-- Destinations Grid -->
+  <div class="grid-container">
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/9a/99/07/9a9907995a9e47722e0922067438d699.jpg" alt="Paris">
+      <div class="card-content">
+        <h3>Paris, France</h3>
+        <a href="https://www.tripadvisor.com/Tourism-g187147-Paris_Ile_de_France-Vacations.html" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://v9q2n5w7.rocketcdn.me/wp-content/uploads/2023/04/new-york_top-of-the-rock-3.jpg" alt="New York">
+      <div class="card-content">
+        <h3>New York, USA</h3>
+        <a href="https://www.nycgo.com/" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.shutterstock.com/image-photo/famous-place-japan-chureito-pagoda-600nw-2340879621.jpg" alt="Tokyo">
+      <div class="card-content">
+        <h3>Tokyo, Japan</h3>
+        <a href="https://www.japan.travel/en/destinations/kanto/tokyo/" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/540229848/photo/beautiful-opera-house-view-at-twilight.jpg?s=612x612&w=0&k=20&c=nxMKn38crmnGRyRmAOAGklRKRkgPRWOQIew2jWu1em8=" alt="Sydney">
+      <div class="card-content">
+        <h3>Sydney, Australia</h3>
+        <a href="https://www.sydney.com/" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.timeout.com/images/105927885/750/562/image.jpg" alt="Rome">
+      <div class="card-content">
+        <h3>Rome, Italy</h3>
+        <a href="https://www.italia.it/en/lazio/rome" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.shutterstock.com/image-photo/beautiful-tropical-maldives-resort-hotel-260nw-432944785.jpg" alt="Maldives">
+      <div class="card-content">
+        <h3>Maldives</h3>
+        <a href="https://visitmaldives.com/en" target="_blank">Visit More</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
